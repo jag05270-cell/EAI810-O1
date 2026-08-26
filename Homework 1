@@ -1,0 +1,87 @@
+Question 1
+
+Scenario: A coffee chain with 10 shops provides a daily CSV file where each row is one shop-day.
+
+Columns:
+
+shop_id: integer 1..10
+
+date: YYYY-MM-DD
+
+transactions: integer (number of transactions)
+
+total_revenue: float USD
+
+iced_latte_qty: integer (iced lattes sold)
+
+Your Task
+
+In the CSV file provided, identify any range checks or sanity checks that could be applied. For each flagged check, state whether it is a range check or a sanity check and explain why.
+
+Question 2: Interpreting NULL Semantics
+
+Scenario
+
+A small subscription service provides a CSV where each row is one customer. Columns:
+
+customer_id: integer
+
+name: string
+
+signup_date: YYYY-MM-DD
+
+last_payment_date: date or NULL
+
+cancel_date: date or NULL
+
+promo_code_used: string or NULL
+
+Your Task
+
+Using the provided CSV file, explain what each NULL (empty cell) means for the three nullable columns: last_payment_date, cancel_date, and promo_code_used. For each column:
+
+State the likely intended semantic meaning of NULL (empty cell) in that column
+
+Give one concrete example from the CSV that illustrates this meaning (identify the row by customer_id or name).
+
+Describe one practical consequence of misinterpreting that NULL (what could go wrong in analysis or downstream systems).
+
+Question 3: Row Explosion from Joins
+
+Scenario
+
+Two small customer-contact tables are available. Each table has one row per contact record. The tables share personal columns (id, first name, last name, email). Your goal is to reason about how many rows result when inner-joining the two tables on each of four columns: id, first_name, last_name, and email. Recall that in an inner join, only those rows are preserved where the feature or attribute matches in both tables. (One row will be created for every possible matching pair between the two tables.)
+
+Table A columns (one row per record)
+
+id: integer (unique in Table A and unique across both tables)
+
+first_name: string (some values duplicated within Table A)
+
+last_name: string (some values duplicated within Table A)
+
+email: string (unique within Table A)
+
+created_at: YYYY-MM-DD (date the record was created)
+
+Table B columns (one row per record)
+
+id: integer (unique in Table B and unique across both tables)
+
+first_name: string (unique within Table B)
+
+last_name: string (some values duplicated within Table B)
+
+email: string (some values duplicated within Table B)
+
+source: string (e.g., "web" or "phone")
+
+Your Task
+
+For each join column (id, first_name, last_name, email), explain qualitatively what will happen to the number of rows when you perform an inner join between Table A and Table B on that column. For each case:
+
+State how many rows the join will create.
+
+Explain why.
+
+For the join(s) that are most likely to cause row explosion, describe one practical mitigation strategy.
