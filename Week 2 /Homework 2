@@ -1,0 +1,55 @@
+1. Overfitting and Underfitting 
+
+Suppose we observe the following weather data: 
+
+It snowed on November 19, January 17, and February 12.  
+
+It did not snow on March 10 or February 21.  
+
+Consider the following possible rules: 
+
+A. It mostly snows in the winter and not in the spring. 
+
+B. It mostly snows on prime-numbered days and on the 12th day of every month. 
+
+Answer the following questions: 
+
+Which rule is more accurate? Explain your reasoning.  
+
+Is either rule likely to represent overfitting or underfitting? Explain your reasoning.  
+
+Even without knowing the true long-term weather pattern, how can we tell that one rule is more likely to overfit than the other? 
+
+2. Training 
+
+Suppose you train a model on the included training and validation data that tries to predict the third column from the first 2. The model is that the third (target) column equals A x (the first column) x (the second column) + B x (the first column).   
+
+Name some parameters A and B that would do a good job of this. Explain how you figured it out.   
+
+Then show which rows it gets approximately right and which it gets wrong in the validation data.  
+
+Write a reflection. Do you think this is a good model for the validation data?  
+
+3. Linear regression and a real estate dataset 
+
+Suppose you are working with a real estate dataset containing home sale prices and features (such as square footage, number of bedrooms, location, and construction age). Your goal is to build a linear regression model that predicts house prices accurately and interpretably — not just to generate predictions, but to understand which features drive price, quantify their effects, and assess whether your model is trustworthy enough to guide business decisions. 
+ 
+Below are five potential prompts (shuffled) that you could provide to an LLM to perform this task. 
+ 
+Your Task: 
+
+Rank these prompts from 1 (Lowest Quality) to 5 (Highest Quality). 
+
+Justify your ranking. Getting the exact right answers is less important than writing a good justification. 
+
+Prompt V: Using my house price dataset, prepare numeric and categorical features, train a linear regression model, compare training and test RMSE, interpret key coefficients, and explain whether errors suggest overfitting, underfitting, or noise. 
+
+Prompt W: I have house price data with several columns about each home. Build a model to predict price, explain the model results, and tell me if the model seems good or bad based on the information available. 
+
+Prompt X: Using my house price dataset, help me train a linear regression model, split the data into training and test sets, evaluate prediction error, and comment on possible overfitting or underfitting. 
+
+Prompt Y: Using my house price dataset, build an interpretable linear regression pipeline: clean missing values, encode categorical features, split train/test, report train/test RMSE and MAE, interpret coefficients carefully, and recommend next modeling steps. 
+
+Prompt Z: I have a dataset about houses and prices. Help me use data science to make predictions, explain what is going on in the data, and give me some general ideas about what I should do with the information. 
+
+ 
