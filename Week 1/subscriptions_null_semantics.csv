@@ -1,0 +1,6 @@
+customer_id,name,signup_date,last_payment_date,cancel_date,promo_code_used
+1,Alice Jones,2025-01-10,,,SUMMER21
+2,Ben Kumar,2024-11-05,2025-02-10,2025-03-01,
+3,Carla Ruiz,2025-02-01,2025-02-28,,
+4,Diego Lee,2025-02-12,,2025-02-15,
+5,Eve Smith,2025-03-01,,,

@@ -1,0 +1,7 @@
+id,first_name,last_name,email,created_at
+1,Alex,Smith,alex.smith.a@example.com,2025-01-10
+2,Brooke,Nguyen,brooke.nguyen@example.com,2025-01-12
+3,Alex,Nguyen,alex.nguyen@example.com,2025-01-15
+4,Dana,Smith,dana.smith@example.com,2025-01-20
+5,Dana,Garcia,shared.contact@example.com,2025-01-22
+6,Eli,Zhang,eli.zhang@example.com,2025-01-25

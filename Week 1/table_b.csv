@@ -1,0 +1,7 @@
+id,first_name,last_name,email,source
+101,Alex,Smith,alex.smith.b@example.org,web
+102,Alex,Smith,shared.contact@example.com,phone
+103,Cody,Nguyen,shared.contact@example.com,web
+104,Dana,Nguyen,dana.other@example.org,partner
+105,Elle,Smith,elle.smith@example.org,web
+106,Gus,Patel,gus.patel@example.org,phone
