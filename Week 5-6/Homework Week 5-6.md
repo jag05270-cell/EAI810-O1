@@ -45,8 +45,8 @@ Assume that the two models cost the same amount to use.
 
 ## 3. Suppose you are using the Top-K method where you can only address K = 10 items with the highest probability threshold.
 
+Specifically rank items by predicted probability. Consider at most the top $K = 10$. Address an item only if the expected value of addressing it exceeds the expected value of not addressing it.
+
 Describe a scenario where you would address less than 10 items and another in which you would address exactly 10.
 
-Show the confusion matrices for each.
-
-You don’t need to show profit in dollars; just the probabilities in each cell.
+Show the confusion matrices and profit for each.
