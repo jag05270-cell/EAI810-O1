@@ -17,7 +17,7 @@ iced_latte_qty: integer (iced lattes sold)
 Your Task
 
 In the CSV file provided, identify any range checks or sanity checks that could be applied. For each flagged check, state whether it is a range check or a sanity check and explain why.
-
+The Shop ID is out of range because it should be only 1 - 10 but one of the shop id shows 99
 Question 2: Interpreting NULL Semantics
 
 Scenario
